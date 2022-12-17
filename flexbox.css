@@ -1,0 +1,49 @@
+/* within one container how we distribute space across different element to make those look neat */
+body{
+    font-family: 'Times New Roman', Times, serif;
+}
+h1{
+    text-align: center;
+}
+#container{
+    background-color: #001d3d;
+    width: 90%;
+    height: 200px;
+    margin: 0 auto;
+    border: 5px solid #001d3d;
+    display: flex;
+    flex-direction: row;
+    justify-content: center; 
+    /* flex-wrap: wrap; */
+    align-items: flex-start;
+}
+/* To use flex properties we have to make display flex  */
+/* There are two axis main axis (x-axis) and cross axis (y-axis) in flexbox container  generally*/
+
+/* Flex-direction: It decides the direction of flex it can be row, row-reverse, column and column reverse */
+/* If flex direction is column then main axis is column i.e. y axis */
+
+/* Justify content : it determines how the content is distributed along main axis it can be flex-start, flex-end, center, space-between and space-around and space evenly */
+/* In space between there will be no space at the borders */
+/* note : start and end depends on flex-direction  */
+/* space evenly is space even at every content */
+
+/* Flex wrap: wrap, nowrap and wrap reversed*/
+
+/* Align-items: works along cross axis and has same values that of justify content and to move content according to the font then use baseline*/
+/* Align content is used to control the space between the cross axis only when wrap is used */
+/* Align self is used to apply it to one element not to the entire container */
+div{
+    width: 200px;
+    height: 200px;
+    flex-basis: 400px;
+
+}
+/* 
+div:nth-of-type(3){
+    align-self: center;
+} */
+
+/* Flex sizing properties : it tells how the element should grow or shrink based on available space */
+/* flex basis must be the inital size of element then flex grow and flex shrink */
+/* flex is the shorthand property: flex grow| flex shrink and flex basis */

@@ -1,0 +1,25 @@
+/* Display properties is used to change the element from inline elment to blockline or vice a versa */
+/* block, inline, inline-block, none */
+h1{
+    border: 3px solid #264653;
+    background-color: lavender;
+    display: inline;
+}
+
+span{
+    background-color: lightgray;
+    border: 3px solid indigo;
+    display: none;
+}
+/* To hide particular element none can be used */
+
+
+/* Display: inline block, respected as a block  but for space used like inline */
+div{
+    width: 200px;
+    height: 200px;
+    background-color: magenta;
+    border: 5px solid #480ca8;
+    display: inline-block;
+    margin: 50px;
+}

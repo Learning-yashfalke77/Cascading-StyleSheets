@@ -1,0 +1,43 @@
+.container {
+  background-color: red;
+  height: 700px;
+  /* width: 900px; */
+  display: grid;
+  /* grid-template-rows: 133px 133px 133px;
+  grid-template-columns: 133px 133px 133px; */
+
+  /* grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 133px 1fr 1fr; */
+
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 30px;
+  column-gap: 30px;
+  justify-items: center;
+  align-items: center;
+}
+
+/* grip template rows: 3 rows of 133px, same for grid template columns */
+/* repeat will make 3 rows and colums with all given spaces of 1fr size items */
+/* 1fr means one fraction of the entire width available */
+/* row gap / column gap : sets the gaps between rows and columns */
+/* justify items: position itself in that particular grid/ for all items horizontally */
+/* justify self:  for particular item  horizontally */
+/* align items: position itself in that particular grid/ for all items vertically */
+/* align self:  for particular item  vertically */ 
+/* place self:  for particular item on horizontall and vertically */ 
+/* place items:  position itself in that particular grid/ for all items horizontall and vertically */ 
+
+.item {
+  background-color: aqua;
+  height: 122px;
+  width: 122px;
+}
+
+.item1 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  justify-self: start;
+}
+
+/* like a colspan / rowsapn take the space i.e start from line 1 and end in line 3 */

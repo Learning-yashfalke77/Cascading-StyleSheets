@@ -1,0 +1,55 @@
+h1{
+    background-color: #f4a261;
+    border: 5px solid #1d3557;
+    color: #ffe8d6;
+    padding: 0.7em;
+    width: 300px;
+    font-size: 1.8em;
+    text-align: center;
+    margin: 20px auto;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: lighter;
+}
+
+h1:nth-of-type(2n){
+    background-color: #ffd7ba;
+}
+
+h1:nth-of-type(3n){
+    background-color: #dda15e;
+}
+
+h1:nth-of-type(4n){
+    background-color: #fca311;
+}
+
+section:first-of-type h1:nth-of-type(1){
+    transform-origin: bottom right;  /* from which point it should rotate */
+    transform: rotate(45deg);
+}
+
+section:first-of-type h1:nth-of-type(2){ 
+    transform: scale(2);  
+    /* transform: scale(2,1); */
+    /* transform: scaleX(2); */
+    /* transform: scaleY(); */
+}
+/* Scale increases the size of element in the form of 1:1 ratio  */
+
+section:first-of-type h1:nth-of-type(3){
+    transform: translateX(200px);
+}
+/* we can move from one position to another */
+
+section:nth-of-type(2) h1:nth-of-type(1){
+    transform: skew(30deg);
+}
+
+section:nth-of-type(2) h1:nth-of-type(2){
+    transform: skew(30deg, 5deg);
+}
+
+/* multiple property applying in single transform */
+section:nth-of-type(2) h1:nth-of-type(3){
+    transform: rotate(-20deg) scale(1.3);
+}

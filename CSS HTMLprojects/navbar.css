@@ -1,0 +1,480 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* ---------------------------------------------------------------------------------------------------------------------------------------------- */
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  z-index: 0;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 0.7rem;
+  align-items: center;
+}
+
+.yelp-logo {
+  margin: 0rem 1rem;
+  font-family: "Carattere", cursive;
+  font-size: 2rem;
+}
+.yelp-logo a {
+  color: black;
+  text-decoration: none;
+}
+
+.yelp-search input {
+  box-sizing: border-box;
+  width: 500px;
+  font-size: 1rem;
+  padding: 0.5rem 0.5rem;
+  padding-left: 2.5rem;
+  outline: none;
+  border-radius: 50px;
+  border: none;
+  background-color: #efefee;
+  border: 1.5px solid #e9ecef;
+  margin-right: 1.5rem;
+  transition: all 0.5s;
+  transition-timing-function: ease-out;
+}
+
+.yelp-search input:focus {
+  box-sizing: border-box;
+  background-color: white;
+  border: 1.5px solid #e9ecef;
+  outline: none;
+}
+
+.yelp-search button {
+  position: absolute;
+  left: 11.9%;
+  background-color: inherit;
+  border: none;
+  border-radius: 20px;
+  display: inline-block;
+  overflow: hidden;
+}
+.yelp-search button:hover {
+  cursor: pointer;
+}
+.yelp-search i {
+  color: #767676;
+  font-size: 1rem;
+  padding-top: 0.6rem;
+  padding-bottom: 0.5rem;
+}
+
+.yelp-opt ol {
+  display: flex;
+  flex-direction: row;
+}
+
+.yelp-opt ol li {
+  margin: 0rem 1rem;
+}
+.yelp-opt ol li a {
+  text-decoration: none;
+  color: #767676;
+  transition: all 0.5s;
+  transition-timing-function: ease-out;
+}
+.yelp-opt ol li a:hover {
+  color: black;
+}
+
+.yelp-opt ol li i {
+  color: #767676;
+  transition: all 0.5s;
+  transition-timing-function: ease-out;
+}
+.yelp-opt ol li i:hover {
+  cursor: pointer;
+  color: black;
+}
+
+.yelp-new {
+  border: 1px solid #e9ecef;
+  padding: 0.5rem 0.5rem;
+  border-radius: 5px;
+  transition: all 0.5s;
+  transition-timing-function: ease-out;
+}
+
+.yelp-new:hover {
+  border: 1px solid black;
+}
+
+.yelp-auth ol {
+  display: flex;
+  flex-direction: row;
+}
+
+.yelp-auth ol li {
+  margin: 0rem 0.7rem;
+}
+
+.sign {
+  text-decoration: none;
+  color: #767676;
+  transition: all 0.5s;
+  transition-timing-function: ease-out;
+}
+
+.sign:hover {
+  color: black;
+}
+
+.join {
+  text-decoration: none;
+  background-color: black;
+  color: white;
+  padding: 0.5rem 0.5rem;
+  border-radius: 5px;
+  transition: all 0.5s;
+  transition-timing-function: ease-out;
+}
+.join:hover {
+  color: white;
+  background-color: rgb(24, 23, 23);
+}
+
+.yelp-others {
+  background-color: #ffffff;
+  z-index: 20;
+  display: none;
+  margin-top: 1rem;
+  border: 1.5px solid #e9ecef;
+  border-radius: 3px;
+  width: 300px;
+  position: absolute;
+  right: 220px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px,
+    rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+}
+
+.yelp-others:before,
+.yelp-others:after {
+  z-index: 20;
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  right: 19px;
+  border: 11px solid transparent;
+  border-bottom-color: #dddddd;
+}
+
+.yelp-others:after {
+  z-index: 20;
+  right: 20px;
+  border: 10px solid transparent;
+  border-bottom-color: #ffffff;
+}
+
+.yelp-others ol {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.yelp-others li i {
+  margin-right: 0.5rem;
+}
+
+.yelp-others li {
+  padding: 0.7rem 0.7rem;
+  margin-left: 1.6rem;
+}
+
+.yelp-others li:first-child {
+  margin-left: 0rem;
+}
+
+.yelp-others li a {
+  text-decoration: none;
+  color: #767676;
+  transition: all 0.5s;
+  transition-timing-function: ease-out;
+}
+
+.yelp-others li a:hover {
+  cursor: pointer;
+  color: black;
+}
+
+.info {
+  z-index: 1;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------- */
+@media (max-width: 1200px) {
+  body {
+    font-size: 0.5rem;
+  }
+  nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    margin-top: 0.5rem;
+    align-items: center;
+  }
+  .yelp-logo {
+    margin: 0rem 0.5rem;
+    font-size: 0.8rem;
+  }
+
+  .yelp-search input {
+    padding-left: 1.5rem;
+    width: 150px;
+    font-size: 0.5rem;
+    margin-right: 0.5rem;
+  }
+
+  .yelp-search button {
+    left: 6%;
+  }
+
+  .yelp-search i {
+    font-size: 0.5rem;
+  }
+
+
+
+  .yelp-opt ol li {
+    margin: 0rem 0.5rem;
+  }
+ 
+
+
+
+
+
+  .yelp-auth ol li {
+    margin: 0rem 0.5rem;
+  }
+
+
+
+  .yelp-others {
+    background-color: #ffffff;
+    z-index: 20;
+    display: none;
+    margin-top: 1rem;
+    border: 1.5px solid #e9ecef;
+    border-radius: 3px;
+    width: 300px;
+    position: absolute;
+    right: 5px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px,
+      rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+  }
+
+  .yelp-others:before,
+  .yelp-others:after {
+    z-index: 20;
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    right: 19px;
+    border: 11px solid transparent;
+    border-bottom-color: #dddddd;
+  }
+
+  .yelp-others:after {
+    z-index: 20;
+    right: 20px;
+    border: 10px solid transparent;
+    border-bottom-color: #ffffff;
+  }
+
+  .yelp-others ol {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .yelp-others li i {
+    margin-right: 0.5rem;
+  }
+
+  .yelp-others li {
+    padding: 0.7rem 0.7rem;
+    margin-left: 1.6rem;
+  }
+
+  .yelp-others li:first-child {
+    margin-left: 0rem;
+  }
+
+  .yelp-others li a {
+    text-decoration: none;
+    color: #767676;
+    transition: all 0.5s;
+    transition-timing-function: ease-out;
+  }
+
+  .yelp-others li a:hover {
+    cursor: pointer;
+    color: black;
+  }
+
+  .info {
+    z-index: 1;
+  }
+}
+
+#yash path{
+  stroke-dasharray: 900;
+  stroke-dashoffset: 900;
+  animation: line-anime 2s ease-in-out forwards;
+}
+
+.logo{
+  position: relative;
+}
+
+.fill {
+  position: absolute;
+  top: 0px;
+  left: -2px;
+  animation:3s ease 0s normal forwards fadein;
+  -webkit-animation:3s ease 0s normal forwards fadein;
+  opacity:1
+}
+
+@keyframes line-anime{
+  to{
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes fadein{
+  0%{opacity:0}
+  66%{opacity:0}
+  100%{opacity:1}
+}

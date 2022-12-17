@@ -1,0 +1,48 @@
+/* color is used to change the text color of any attribute requires color name */
+
+/* background-color: change the background color of any attribute and requires color names, background can also be used 
+NOTE: background-color only changes the color, but background can do more thing like gradient etc. */
+
+/* RGB COLOR MODE: rgb(red values 0-255, green values 0-255, blue values 0-255) 
+site to check color picker: https://htmlcolorcodes.com/color-picker/ */
+
+/* HEXADECIMAL RGB COOR MODE: # (red value (0-ff) 2 bits)(green value(0-ff) 2 bits)(blue value (0-ff) 2 bits ) */
+
+/* Alpha channel: rgba where rgb willl bw same alpha will decide the transperancy and it ranges from 0 to 1 */
+/* opacity is same as alpha channel but it will downgrade the opacity of all element present inside it */
+
+h1 {
+    color: teal;
+    background-color: rgb(243, 57, 259);
+}
+h2 {
+    color: tomato;
+    background-color: rgb(129, 46, 129);
+}
+button {
+    color: magenta;
+    background-color: cyan;
+}
+p {
+    color: #E95468;
+    background: darksalmon;
+}
+body {
+    background-color: #E0EEED ;
+}
+
+section{
+    width: 700px;
+    height: 700px;
+    background-color: #023e8a;
+}
+.rgba{
+    width: 50%;
+    height: 50%;
+    background-color: rgba(0, 150, 199, 0.5);
+}
+.opacity{
+    width: 50%;
+    height: 50%;
+    background-color: rgba(250, 163, 7, 0.5);
+}

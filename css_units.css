@@ -1,0 +1,55 @@
+/* Relative units: % , em , rem */
+
+section{
+    background-color: #f72585;
+    width: 800px;
+    height: 800px;
+}
+
+div{
+    background-color: #b5179e;
+    width: 50%;
+    height: 50%;
+}
+/* here width and height will be the 50% of parent section height and width */
+
+h1{
+    font-size: 50px;
+    border: 1px solid black;
+    line-height: 250%;
+}
+
+/* EMS if parent has m font size then if child has 1em then it has font size same that of parent, 2em double of parent size (for font size) */
+/* for padding margin it depends on the font size of my elements not parent elements  */
+article{
+    font-size: 25px;
+}
+h2{
+    font-size: 0.8em;
+}
+p{
+    font-size: 0.5em;
+}
+button{
+    color: #f1faee;
+    background-color: #f72585;
+    font-size: 1em;
+    border-radius: 00.5em;
+    padding: 0.2em 0.5em;
+    border: none;
+    margin-left: 5em;
+    margin-top: 1em;
+}
+button:hover{
+    text-decoration: underline;
+}
+/* Disadvantage: should not be used for more nested li ul etc.... */
+
+
+/* REM: its font size depends on font size of root html  */
+.rem h3{
+    font-size: 3rem;
+}
+.rem p{
+    font-size: 2rem;
+}

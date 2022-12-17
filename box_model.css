@@ -1,0 +1,90 @@
+div, h1{
+    width: 500px;
+    height: 200px;
+}
+
+/* Border properties */
+/* The border takes extra given pixels from the given height and width  */
+
+#one{
+    background-color: #fde2e4;
+    border-width: 3px;
+    border-color: black;
+    border-style: solid;
+    box-sizing: border-box;
+}
+/* here in box sizing the border will take the pixels inside te box and total width and height will have same   */
+
+#two{
+    background-color: #fff1e6;
+    border-width: 3px;
+    border-color: #d62828;
+    border-style: dashed;
+}
+
+#three{
+    background-color: #e2ece9;
+    border-left-width: 5px;
+    border-left-color: blueviolet;
+    border-left-style: dotted;
+}
+
+/* can use all the properties set in one attribute border or using three different properties  */
+/* This property is called as shorthand property */
+.heading{
+    border: 10px inset #248277;
+    border-right-style: dotted;
+}
+
+/* Border radius */
+/* Can be used in pixel or % , but to make a particular shape use percentage units  */
+.img{
+    border-radius: 70%;
+}
+
+/* Padding is the actual space betwwen actual content box and the border  */
+/* There two ways to do padding 
+1. padding-left  padding-top padding-top padding-bottom
+2. padding  (top right bottom left / to all directly )
+*/
+/* padding is also used to make input larger without making text larger  */
+h1{
+    padding-left: 100px;
+    padding-top: 50px;
+}
+
+.pads{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    padding: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 10px;
+}
+
+/*  Margin is the space outside the border OR space between two consecutive box model */
+/* There two ways to do margin 
+1. margin-left  margin-top margin-top margin-bottom
+2. margin  (top right bottom left / to all directly / top-bottom left-right)
+*/
+/* body tag has margin by default 8px so firwst make it zero */
+
+body{
+    margin: 0px;
+}
+h1{
+    margin: 0px;
+}
+#one{
+    margin-left: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+#two{
+    margin: 50px;
+}
+#three{
+    margin: 50px;
+}
+
+/* Margin auto it makes the element centered in its block */

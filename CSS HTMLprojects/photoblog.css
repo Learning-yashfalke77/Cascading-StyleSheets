@@ -1,0 +1,28 @@
+nav{
+    text-transform: uppercase;
+    border-bottom: 2px solid #f1f1f1;
+    width: 30%;
+    margin: 1.6666%;
+    padding-bottom: 0.7em;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2em;
+    position: sticky;
+}
+
+img{
+    width: 30%;
+    margin: 1.6666%;
+    border-radius: 20%;
+    box-shadow: 0 0.6em 0.5em -0.4em #264653;
+    transition: all 0.25s;
+}
+
+/* for space betwwen images use flexbox but you can use margin  */
+/* margin : 90% is covered by all images reamining 10 % should be space between the images so each required two margin (left and right) so 
+            10/6 = 1.6666666% */
+
+img:hover{
+    transform: translateY(-0.25em);
+    cursor: pointer;
+}
+

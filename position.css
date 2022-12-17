@@ -1,0 +1,38 @@
+/* position sets an how element is positioned in document */
+div{
+    width: 100px;
+    height: 100px;
+    background-color: sandybrown;
+    display: inline-block;
+    border: 2px solid black;
+    margin: 10px;
+}
+#middle{
+    background-color: burlywood;
+}
+/* static will have no effect to the position */
+#static #middle{
+    position: static;
+    top: 50px;
+}
+
+/* relative can change the position from the earlier postion to particular distance */
+#relative #middle{
+    position: relative;
+    top: 100px;
+    left: 100px;
+}
+
+/* Absolute refer docs https://developer.mozilla.org/en-US/docs/Web/CSS/position */
+#absolute #middle{
+    position: absolute;
+    top: 50px;
+}
+
+/* It will always start from start of the page and it will stay there only even if you scroll down generally used for navbar*/
+#fixed #middle{
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+/* Sticky same as fixed but at starting it would not be fixed but after scrolling it will be fixed */

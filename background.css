@@ -1,0 +1,18 @@
+section{
+    width: 80%;
+    height: 800px;
+    background-image: url("https://images.pexels.com/photos/268533/pexels-photo-268533.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
+    background-size: cover;
+    background-position: top;
+    margin: 0 auto;
+}
+
+/* cover tries to bring entire image in that section and conatin does crop or strech but it repeat */
+/* background position helps to take which part of image should be displayed  */
+/* Shorthand of all is background */
+/* we can apply two image also but use then background property and pls refer docs for background property */
+
+h1{
+    font-size: 100px;
+    color: white;
+}
